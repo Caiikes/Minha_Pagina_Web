@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url("cenario.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#cenario {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#urso {
+    position: absolute;
+    bottom: 25%; 
+    height: 100px;
+    left: 50%; 
+    transition: bottom 0.3s, left 0.1s, transform 0.1s;
+}
+
+.vira-a-imagem {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
